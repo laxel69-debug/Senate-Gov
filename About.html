@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senate Gov Ph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body styling for overall layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 56px; /* Adjust this value based on your actual navbar height to prevent content overlap */
+            background-color: #f8f9fa; /* Light background */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            display: flex; /* Use flexbox for overall layout */
+            flex-direction: column; /* Stack header, main, footer vertically */
+        }
+
+        /* Main content area to push the footer down */
+        main {
+            flex-grow: 1; /* Allows the main content to expand and push the footer to the bottom */
+            padding-bottom: 20px; /* Add some padding at the bottom of main content before footer */
+        }
+
+        /* Carousel specific styles */
+        .carousel-container {
+            max-width: 800px; /* Max width for the carousel */
+            width: 100%; /* Ensure it's fluid */
+            margin: 20px auto; /* Center the carousel horizontally and add vertical margin */
+            border-radius: 15px; /* Rounded corners for the container */
+            overflow: hidden; /* Ensures image corners are also rounded */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .carousel-item img {
+            width: 100%; /* Make images fluid within their container */
+            height: 400px; /* Fixed height for consistency */
+            object-fit: cover; /* Cover the area, cropping if necessary */
+            border-radius: 15px; /* Rounded corners for images */
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for caption */
+            border-radius: 0 0 15px 15px; /* Rounded bottom corners for caption */
+            padding: 15px;
+            bottom: 0; /* Position at the bottom */
+            left: 0;
+            right: 0;
+            width: 100%; /* Ensure caption spans full width */
+        }
+        .carousel-caption h5 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        .carousel-caption p {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive adjustments for carousel */
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px; /* Adjust height for smaller screens */
+            }
+            .carousel-caption h5 {
+                font-size: 1.2rem;
+            }
+            .carousel-caption p {
+                font-size: 0.8rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .carousel-item img {
+                height: 200px; /* Further adjust height for mobile */
+            }
+            .carousel-caption {
+                padding: 10px;
+            }
+            .carousel-caption h5 {
+                font-size: 1rem;
+            }
+            .carousel-caption p {
+                font-size: 0.7rem;
+            }
+        }
+
+        footer a:hover {
+            color: #adb5bd !important; /* Lighter grey for hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"> <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Your Logo/Brand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Senators.html">Senators</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Committees.html">Committees</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Publications.html">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LegislativeDocs.html">Legislative Documents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GAD.html">GAD</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+
+    </main>
+
+    <footer class="bg-dark text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="About.html" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="Senators.html" class="text-white text-decoration-none">Senators</a></li>
+                        <li><a href="Committees.html" class="text-white text-decoration-none">Committees</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>More Info</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Publications.html" class="text-white text-decoration-none">Publications</a></li>
+                        <li><a href="LegislativeDocs.html" class="text-white text-decoration-none">Legislative Documents</a></li>
+                        <li><a href="GAD.html" class="text-white text-decoration-none">GAD</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        123 Street Name<br>
+                        City, Country 12345<br>
+                        Email: info@example.com<br>
+                        Phone: (123) 456-7890
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

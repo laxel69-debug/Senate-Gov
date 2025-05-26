@@ -1,0 +1,41 @@
+
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0056b3 !important;
+}
+
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+
+footer a:hover {
+    color: #adb5bd !important;
+}
+
+
+body {
+    padding-top: 56px;
+}
+
+
+html, body {
+    height: 100%;
+}
+#wrapper {
+    min-height: calc(100vh - 56px - 150px);
+   
+}
+.navbar-brand {
+            font-weight: bold;
+            color: hsl(64, 69%, 64%) !important; /* Example custom color */
+        }
+        .nav-link:hover {
+            color: hsl(64, 69%, 64%) !important; /* Bootstrap primary color */
+        }
+        footer a:hover {
+            color: #adb5bd !important; /* Lighter grey for hover */
+        }
